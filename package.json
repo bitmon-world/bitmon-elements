@@ -23,9 +23,9 @@
   "scripts": {
     "compile": "truffle compile",
     "export": "yarn run compile && truffle-export-abi",
-    "deploy:ropsten": "truffle migrate --network ropsten",
+    "deploy:rinkeby": "truffle migrate --network rinkeby",
     "deploy:mainnet": "truffle migrate --network mainnet",
-    "console:ropsten": "truffle console --network ropsten",
+    "console:rinkeby": "truffle console --network rinkeby",
     "console:mainnet": "truffle console --network mainnet"
   }
 }

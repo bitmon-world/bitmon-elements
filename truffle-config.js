@@ -11,11 +11,12 @@ module.exports = {
             },
             network_id: 1
         },
-        ropsten: {
+        rinkeby: {
             provider: function() {
-                return new HDWalletProvider(process.env.KEY_TEST, "https://ropsten.infura.io/v3/" + process.env.INFURA_SECRET)
+                return new HDWalletProvider(process.env.KEY_TEST, "https://rinkeby.infura.io/v3/" + process.env.INFURA_SECRET)
             },
-            network_id: 3
+            network_id: 4,
+            skipDryRun: true,
         }
     }
 };
